@@ -11,7 +11,7 @@ namespace AI_Uzd_1_API.IRepository
         Task<IList<Team>> GetTeams();
         Task<Team> GetTeam(int id);
         Task AddTeam(Team team);
-        Task UpdateTeam(Team team);
+        void UpdateTeam(Team team);
         Task DeleteTeam(int id);
         Task Save();
     }

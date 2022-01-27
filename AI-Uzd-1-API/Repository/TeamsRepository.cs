@@ -43,7 +43,7 @@ namespace AI_Uzd_1_API.Repository
             await context.SaveChangesAsync();
         }
 
-        public async Task UpdateTeam(Team team)
+        public void UpdateTeam(Team team)
         {
             context.Entry(team).State = EntityState.Modified;
         }
