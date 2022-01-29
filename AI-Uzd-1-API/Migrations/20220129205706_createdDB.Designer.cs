@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AI_Uzd_1_API.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20220127221745_createdDB")]
+    [Migration("20220129205706_createdDB")]
     partial class createdDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,20 +28,14 @@ namespace AI_Uzd_1_API.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Age")
-                        .HasColumnType("int");
-
                     b.Property<int>("Height")
                         .HasColumnType("int");
 
                     b.Property<double>("JumpHeight")
                         .HasColumnType("float");
 
-                    b.Property<double>("ReactionTime")
-                        .HasColumnType("float");
-
-                    b.Property<double>("Speed")
-                        .HasColumnType("float");
+                    b.Property<string>("Position")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("TeamId")
                         .HasColumnType("int");
@@ -56,6 +50,21 @@ namespace AI_Uzd_1_API.Migrations
                     b.ToTable("Players");
                 });
 
+            modelBuilder.Entity("AI_Uzd_1_API.Models.Sport", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sport");
+                });
+
             modelBuilder.Entity("AI_Uzd_1_API.Models.Team", b =>
                 {
                     b.Property<int>("Id")
@@ -63,13 +72,15 @@ namespace AI_Uzd_1_API.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Sport")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("SportId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("SportId");
 
                     b.ToTable("Teams");
                 });
@@ -81,6 +92,22 @@ namespace AI_Uzd_1_API.Migrations
                         .HasForeignKey("TeamId");
 
                     b.Navigation("Team");
+                });
+
+            modelBuilder.Entity("AI_Uzd_1_API.Models.Team", b =>
+                {
+                    b.HasOne("AI_Uzd_1_API.Models.Sport", "Sport")
+                        .WithMany("Teams")
+                        .HasForeignKey("SportId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Sport");
+                });
+
+            modelBuilder.Entity("AI_Uzd_1_API.Models.Sport", b =>
+                {
+                    b.Navigation("Teams");
                 });
 
             modelBuilder.Entity("AI_Uzd_1_API.Models.Team", b =>

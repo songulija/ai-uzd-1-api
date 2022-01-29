@@ -7,17 +7,36 @@ namespace AI_Uzd_1_API.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Sport",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Sport", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Teams",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Sport = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SportId = table.Column<int>(type: "int", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Teams", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Teams_Sport_SportId",
+                        column: x => x.SportId,
+                        principalTable: "Sport",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -29,10 +48,8 @@ namespace AI_Uzd_1_API.Migrations
                     TeamId = table.Column<int>(type: "int", nullable: true),
                     Weight = table.Column<int>(type: "int", nullable: false),
                     Height = table.Column<int>(type: "int", nullable: false),
-                    Age = table.Column<int>(type: "int", nullable: false),
                     JumpHeight = table.Column<double>(type: "float", nullable: false),
-                    Speed = table.Column<double>(type: "float", nullable: false),
-                    ReactionTime = table.Column<double>(type: "float", nullable: false)
+                    Position = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -49,6 +66,11 @@ namespace AI_Uzd_1_API.Migrations
                 name: "IX_Players_TeamId",
                 table: "Players",
                 column: "TeamId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Teams_SportId",
+                table: "Teams",
+                column: "SportId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -58,6 +80,9 @@ namespace AI_Uzd_1_API.Migrations
 
             migrationBuilder.DropTable(
                 name: "Teams");
+
+            migrationBuilder.DropTable(
+                name: "Sport");
         }
     }
 }

@@ -11,14 +11,12 @@ namespace AI_Uzd_1_API.Models
     {
         [Key]
         public int Id { get; set; }
+        public string Name { get; set; }
         [ForeignKey(nameof(Team))]
         public int? TeamId {get;set;}
         public virtual Team Team { get; set; }
         public int Weight { get; set; }
         public int Height { get; set; }
-        public int Age { get; set; }
-        public double JumpHeight { get; set; }
-        public double Speed { get; set; }
-        public double ReactionTime { get; set; }
+        public string Position { get; set; }
     }
 }
