@@ -44,7 +44,8 @@ namespace AI_Uzd_1_API.Controllers
         {
             await _repository.AddPlayer(player);
             await _repository.Save();
-            return CreatedAtRoute("GetPlayer", new { id = player.Id},player);
+            var result = await _repository.GetPlayer(player.Id);
+            return Ok(result);
         }
         [HttpPut("{id:int}")]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]

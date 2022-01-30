@@ -31,12 +31,12 @@ namespace AI_Uzd_1_API.Repository
 
         public async Task<Player> GetPlayer(int id)
         {
-            return await _players.SingleOrDefaultAsync(x => x.Id == id);
+            return await _players.Include(p => p.Team).ThenInclude(t => t.Sport).SingleOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<IList<Player>> GetPlayers()
         {
-            return await _players.ToListAsync();
+            return await _players.Include(p => p.Team).ThenInclude(t => t.Sport).ToListAsync();
         }
 
         public async Task Save()

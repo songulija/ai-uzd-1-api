@@ -63,7 +63,10 @@ namespace AI_Uzd_1_API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "AI_Uzd_1_API v1"));
             }
 
+
             app.UseHttpsRedirection();
+            // letting app know that it should use CORS policy with name "AllowAll" that i created 
+            app.UseCors("AllowAll");
 
             app.UseRouting();
 
