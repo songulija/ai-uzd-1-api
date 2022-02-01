@@ -53,7 +53,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 1,
                             Height = 199,
                             Name = "Thibaut Courtois",
-                            Position = "Vartininkas",
+                            Position = "Gynejas",
                             TeamId = 2,
                             Weight = 96
                         },
@@ -62,7 +62,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 2,
                             Height = 173,
                             Name = "Dani Carvajal",
-                            Position = "Gynėjas",
+                            Position = "Gynejas",
                             TeamId = 2,
                             Weight = 73
                         },
@@ -71,7 +71,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 3,
                             Height = 184,
                             Name = "Sergio Ramos",
-                            Position = "Gynėjas",
+                            Position = "Gynejas",
                             TeamId = 2,
                             Weight = 85
                         },
@@ -80,7 +80,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 4,
                             Height = 186,
                             Name = "Eder Militao",
-                            Position = "Gynėjas",
+                            Position = "Gynejas",
                             TeamId = 2,
                             Weight = 79
                         },
@@ -89,7 +89,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 5,
                             Height = 191,
                             Name = "Raphaël Varane",
-                            Position = "Gynėjas",
+                            Position = "Gynejas",
                             TeamId = 2,
                             Weight = 81
                         },
@@ -98,7 +98,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 6,
                             Height = 180,
                             Name = "José Ignacio Fernández Iglesias",
-                            Position = "Gynėjas",
+                            Position = "Gynejas",
                             TeamId = 2,
                             Weight = 76
                         },
@@ -107,7 +107,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 7,
                             Height = 175,
                             Name = "Eden Hazard",
-                            Position = "Puolėjas",
+                            Position = "Puolejas",
                             TeamId = 2,
                             Weight = 75
                         },
@@ -116,7 +116,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 8,
                             Height = 183,
                             Name = "Toni Kroos",
-                            Position = "Saugas",
+                            Position = "Puolejas",
                             TeamId = 2,
                             Weight = 76
                         },
@@ -125,7 +125,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 9,
                             Height = 187,
                             Name = "Karim Benzema",
-                            Position = "Puolėjas",
+                            Position = "Puolejas",
                             TeamId = 2,
                             Weight = 85
                         },
@@ -134,7 +134,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 10,
                             Height = 174,
                             Name = "Luka Modrić",
-                            Position = "Saugas",
+                            Position = "Puolejas",
                             TeamId = 2,
                             Weight = 66
                         },
@@ -143,7 +143,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 11,
                             Height = 182,
                             Name = "Marco Asensio",
-                            Position = "Puolėjas",
+                            Position = "Puolejas",
                             TeamId = 2,
                             Weight = 75
                         },
@@ -152,7 +152,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 13,
                             Height = 209,
                             Name = "Marek Blaževič",
-                            Position = "Centras",
+                            Position = "Puolejas",
                             TeamId = 1,
                             Weight = 114
                         },
@@ -161,7 +161,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 14,
                             Height = 196,
                             Name = "Mantas Kalnietis",
-                            Position = "Įžaidėjas",
+                            Position = "Gynejas",
                             TeamId = 1,
                             Weight = 90
                         },
@@ -170,7 +170,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 15,
                             Height = 206,
                             Name = "Regimantas Miniotas",
-                            Position = "Sunkus kraštas",
+                            Position = "Puolejas",
                             TeamId = 1,
                             Weight = 105
                         },
@@ -179,7 +179,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 16,
                             Height = 201,
                             Name = "Niels Giffey",
-                            Position = "Lengvas kraštas",
+                            Position = "Puolejas",
                             TeamId = 1,
                             Weight = 93
                         },
@@ -188,7 +188,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 17,
                             Height = 195,
                             Name = "Artūras Milaknis",
-                            Position = "Atakuojantis gynėjas",
+                            Position = "Gynejas",
                             TeamId = 1,
                             Weight = 90
                         },
@@ -197,7 +197,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 18,
                             Height = 205,
                             Name = "Paulius Jankūnas",
-                            Position = "Sunkus kraštas",
+                            Position = "Puolejas",
                             TeamId = 1,
                             Weight = 113
                         },
@@ -206,7 +206,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 19,
                             Height = 190,
                             Name = "Titas Sargiūnas",
-                            Position = "Įžaidėjas",
+                            Position = "Gynejas",
                             TeamId = 1,
                             Weight = 82
                         },
@@ -215,7 +215,7 @@ namespace AI_Uzd_1_API.Migrations
                             Id = 20,
                             Height = 211,
                             Name = "Joffrey Lauvergne",
-                            Position = "Centras",
+                            Position = "Puolejas",
                             TeamId = 1,
                             Weight = 118
                         });

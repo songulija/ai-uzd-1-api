@@ -1,3 +1,4 @@
+using AI_Uzd_1_API.Configuration;
 using AI_Uzd_1_API.IRepository;
 using AI_Uzd_1_API.Models;
 using AI_Uzd_1_API.Repository;
@@ -41,6 +42,8 @@ namespace AI_Uzd_1_API
                    .AllowAnyMethod()
                    .AllowAnyHeader());
             });
+            // Add autoMapper. For type providing MapperInitializer that i created in Configurations
+            services.AddAutoMapper(typeof(MapperInitilizer));
             //adding services
             services.AddTransient<ITeamsRepository, TeamsRepository>();
             services.AddTransient<IPlayersRepository, PlayerRepository>();

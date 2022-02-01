@@ -73,3 +73,9 @@ D:\AspNetApps\AI-Uzd-1-API\AI-Uzd-1-API\obj\Debug\net5.0\AI-Uzd-1-API.dll
 D:\AspNetApps\AI-Uzd-1-API\AI-Uzd-1-API\obj\Debug\net5.0\ref\AI-Uzd-1-API.dll
 D:\AspNetApps\AI-Uzd-1-API\AI-Uzd-1-API\obj\Debug\net5.0\AI-Uzd-1-API.pdb
 D:\AspNetApps\AI-Uzd-1-API\AI-Uzd-1-API\obj\Debug\net5.0\AI-Uzd-1-API.genruntimeconfig.cache
+D:\AspNetApps\AI-Uzd-1-API\AI-Uzd-1-API\bin\Debug\net5.0\AutoMapper.dll
+D:\AspNetApps\AI-Uzd-1-API\AI-Uzd-1-API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\AspNetApps\AI-Uzd-1-API\AI-Uzd-1-API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\AspNetApps\AI-Uzd-1-API\AI-Uzd-1-API\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+D:\AspNetApps\AI-Uzd-1-API\AI-Uzd-1-API\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+D:\AspNetApps\AI-Uzd-1-API\AI-Uzd-1-API\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

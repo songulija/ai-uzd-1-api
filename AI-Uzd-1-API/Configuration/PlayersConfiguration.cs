@@ -21,7 +21,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 199,
                     Weight = 96,
                     Name = "Thibaut Courtois",
-                    Position = "Vartininkas"
+                    Position = "Gynejas"
                 },
                 new Player
                 {
@@ -30,7 +30,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 173,
                     Weight = 73,
                     Name = "Dani Carvajal",
-                    Position = "Gynėjas"
+                    Position = "Gynejas"
                 },
                 new Player
                 {
@@ -39,7 +39,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 184,
                     Weight = 85,
                     Name = "Sergio Ramos",
-                    Position = "Gynėjas"
+                    Position = "Gynejas"
                 },
                 new Player
                 {
@@ -48,7 +48,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 186,
                     Weight = 79,
                     Name = "Eder Militao",
-                    Position = "Gynėjas"
+                    Position = "Gynejas"
                 },
                 new Player
                 {
@@ -57,7 +57,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 191,
                     Weight = 81,
                     Name = "Raphaël Varane",
-                    Position = "Gynėjas"
+                    Position = "Gynejas"
                 },
                 new Player
                 {
@@ -66,7 +66,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 180,
                     Weight = 76,
                     Name = "José Ignacio Fernández Iglesias",
-                    Position = "Gynėjas"
+                    Position = "Gynejas"
                 },
                 new Player
                 {
@@ -75,7 +75,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 175,
                     Weight = 75,
                     Name = "Eden Hazard",
-                    Position = "Puolėjas"
+                    Position = "Puolejas"
                 },
                 new Player
                 {
@@ -84,7 +84,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 183,
                     Weight = 76,
                     Name = "Toni Kroos",
-                    Position = "Saugas"
+                    Position = "Puolejas"
                 },
                 new Player
                 {
@@ -93,7 +93,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 187,
                     Weight = 85,
                     Name = "Karim Benzema",
-                    Position = "Puolėjas"
+                    Position = "Puolejas"
                 },
                 new Player
                 {
@@ -102,7 +102,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 174,
                     Weight = 66,
                     Name = "Luka Modrić",
-                    Position = "Saugas"
+                    Position = "Puolejas"
                 },
                 new Player
                 {
@@ -111,9 +111,9 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 182,
                     Weight = 75,
                     Name = "Marco Asensio",
-                    Position = "Puolėjas"
+                    Position = "Puolejas"
                 },
-                //krepsinis
+                //KREPSINIS
                 new Player
                 {
                     Id = 13,
@@ -121,7 +121,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 209,
                     Weight = 114,
                     Name = "Marek Blaževič",
-                    Position = "Centras"
+                    Position = "Puolejas"
                 },
                 new Player
                 {
@@ -130,7 +130,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 196,
                     Weight = 90,
                     Name = "Mantas Kalnietis",
-                    Position = "Įžaidėjas"
+                    Position = "Gynejas"
                 },
                 new Player
                 {
@@ -139,7 +139,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 206,
                     Weight = 105,
                     Name = "Regimantas Miniotas",
-                    Position = "Sunkus kraštas"
+                    Position = "Puolejas"
                 },
                 new Player
                 {
@@ -148,7 +148,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 201,
                     Weight = 93,
                     Name = "Niels Giffey",
-                    Position = "Lengvas kraštas"
+                    Position = "Puolejas"
                 },
                 new Player
                 {
@@ -157,7 +157,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 195,
                     Weight = 90,
                     Name = "Artūras Milaknis",
-                    Position = "Atakuojantis gynėjas"
+                    Position = "Gynejas"
                 },
                 new Player
                 {
@@ -166,7 +166,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 205,
                     Weight = 113,
                     Name = "Paulius Jankūnas",
-                    Position = "Sunkus kraštas"
+                    Position = "Puolejas"
                 },
                 new Player
                 {
@@ -175,7 +175,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 190,
                     Weight = 82,
                     Name = "Titas Sargiūnas",
-                    Position = "Įžaidėjas"
+                    Position = "Gynejas"
                 },
                 new Player
                 {
@@ -184,7 +184,7 @@ namespace AI_Uzd_1_API.Configuration
                     Height = 211,
                     Weight = 118,
                     Name = "Joffrey Lauvergne",
-                    Position = "Centras"
+                    Position = "Puolejas"
                 }
             );
         }
